@@ -82,6 +82,9 @@ run().catch(console.dir);
 app.get("/", (req, res) => {
   res.send("Electronic House server is running!!");
 });
+app.get("/blog", (req, res) => {
+  res.send("Blog is not Connected!!");
+});
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
